@@ -10,8 +10,8 @@
     <meta property="og:description" content="Tanpa Mengurangi Rasa Hormat, Kami Mengundang Bapak/Ibu/Saudara/i untuk Hadir di Acara Pernikahan Kami.">
 
     <!-- Tambahkan secure_url untuk protokol https -->
-    <meta property="og:image" content="https://maroon-minang.netlify.app//cover.jpg">
-    <meta property="og:image:secure_url" content="https://maroon-minang.netlify.app//cover.jpg">
+    <meta property="og:image" content="https://maroon-minang.vercel.app//cover.jpg">
+    <meta property="og:image:secure_url" content="https://maroon-minang.vercel.app//cover.jpg">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -26,7 +26,7 @@
             box-sizing: border-box;
         }
 
-        /* Background luar (pembungkus utama di laptop) */
+          /* Background luar (pembungkus utama di laptop) */
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -51,44 +51,61 @@
             flex-direction: column;
             align-items: center;
             justify-content: flex-end;
-            padding-bottom: 40px;
+            padding-bottom: 35px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Bayangan estetik di laptop */
         }
 
-        /* Area Nama Tamu & Tombol Buka */
-        .interactive-area {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 12px;
-            width: 100%;
-        }
+       /* Area Nama Tamu & Tombol Buka */
+.interactive-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+    /* UBAH DARI 40% KEMBALI KE 70% AGAR KOTAK WIDE DAN MUAT */
+    width: 55%; 
+    max-width: 240px; 
+    
+    /* Sesuaikan padding atas-bawah dan samping */
+    padding: 10px 12px; 
 
-        .dear-text {
-            font-size: 0.85rem;
-            color: #ffffff;
-            opacity: 0.8;
-        }
+    background-color: #907242; 
+    border-radius: 20px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
 
-        .guest-name {
-            font-size: 1.15rem;
-            font-weight: 700;
-            color: #ffffff;
-            margin-top: -8px;
-        }
+.dear-text {
+    font-size: 0.75rem;
+    color: #ffffff;
+    opacity: 0.8;
+}
 
-        .btn-open {
-            background-color: #9e1b11;
-            color: #ffffff;
-            border: none;
-            padding: 10px 28px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            cursor: pointer;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            transition: transform 0.2s ease;
-        }
+.guest-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: -4px;
+}
+
+.btn-open {
+    background-color: #9e1b11;
+    color: #ffffff;
+    border: none;
+    
+    /* KECILKAN PADDING SAMPLING DARI 28px KE 16px SUPAYA TEKS SATU BARIS */
+    padding: 8px 16px; 
+    
+    border-radius: 20px;
+    font-size: 0.80rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+    
+    /* PASTIIN TEKS NGGAK PATAH JADI DUA BARIS */
+    white-space: nowrap; 
+}
 
         .btn-open:active {
             transform: scale(0.95);
