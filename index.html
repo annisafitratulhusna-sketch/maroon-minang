@@ -45,15 +45,17 @@
     width: 100%;
     max-width: 480px;
     height: 100vh;
-    background: url('cover.jpg') center center / cover no-repeat;
+    height: 100dvh;
+    
+    /* GANTI 'center center' JADI 'center top' SUPAYA GAMBAR FOKUS KE ATAS */
+    background: url('cover.jpg') center top / cover no-repeat;
+    
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    
-    /* NAIKKAN PADDING DARI 43px JADI 100px AGAR KOTAK KETARIK NAIR */
-    padding-bottom: 100px; 
+    padding-bottom: 40px; 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
